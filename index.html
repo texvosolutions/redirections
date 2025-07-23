@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+    <script>
+        let links={
+            "396422":"https://www.texvo.com",
+        }
+        const id = window.location.pathname.replace('/','');
+        if(id && links[id]){
+            window.location.href = links[id];
+        }
+    </script>
+</body>
+</html>
